@@ -65,7 +65,7 @@ function Get-FolderSize($path) {
     try {
         $sum = (Get-ChildItem $path -Recurse -Force -ErrorAction SilentlyContinue |
                 Measure-Object -Property Length -Sum -ErrorAction SilentlyContinue).Sum
-        return [long]($sum ?? 0)
+        if ($sum) { return [long]$sum } else { return [long]0 }
     } catch { return [long]0 }
 }
 
