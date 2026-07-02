@@ -1,47 +1,48 @@
-# WinSweep – Neural Cleanse Protocol v2.2
+# Flipper-HackSim
 
-> A cyberpunk-themed Windows cleanup utility designed for Flipper Zero BadUSB deployment and standalone PowerShell execution.
+> A cinematic PowerShell hacking simulator for Flipper Zero BadUSB and Windows.
 
-WinSweep provides an immersive terminal-style experience while performing system maintenance tasks such as removing temporary files, browser caches, Windows update leftovers, and other unnecessary data. The script delivers real-time progress updates and generates a final system status report upon completion.
+Flipper-HackSim is a Hollywood-style cyberattack simulator designed for entertainment, demonstrations, presentations, and prank scenarios. The script creates an immersive cyberpunk terminal experience featuring simulated network intrusions, fake privilege escalation, ransomware alerts, animated progress bars, and terminal effects.
+
+**No real hacking, exploitation, malware installation, credential theft, persistence, or system modification is performed.**
 
 ---
 
 ## Features
 
-### Immersive User Experience
+### Cyberpunk Terminal Experience
 
-* Animated startup sequence
-* Cyberpunk-inspired terminal interface
-* Dynamic status messages
-* Progress tracking visualization
-* Detailed completion report
+- Full-screen terminal interface
+- Animated boot sequence
+- Glitch-text effects
+- Dynamic typing animations
+- Real-time progress bars
+- Hollywood-style hacking visuals
+- Interactive simulation flow
 
-### System Cleanup
+### Simulated Cyber Attack Sequence
 
-The script performs the following cleanup operations:
+Includes realistic-looking but completely fake:
 
-* User temporary files
-* Windows temporary files
-* Windows Prefetch files
-* Windows Update download cache
-* Thumbnail cache
-* Google Chrome cache
-* Microsoft Edge cache
-* Mozilla Firefox cache
-* Recycle Bin contents
-* DNS cache refresh
-* Windows Event Logs
+- Network reconnaissance
+- Firewall bypasses
+- Privilege escalation
+- Exploit deployment
+- Reverse shell creation
+- System enumeration
+- Persistence installation
+- Data exfiltration
+- Ransomware attack
+- System recovery
 
-### System Reporting
+### Dynamic Visual Effects
 
-After completion, WinSweep displays:
-
-* Total storage recovered
-* Available system memory
-* System uptime
-* Current user
-* Computer name
-* Execution timestamp
+- Randomized fake IP addresses
+- Animated terminal output
+- Color-coded warnings and alerts
+- Progress tracking bars
+- System breach notifications
+- Recovery sequences
 
 ---
 
@@ -49,128 +50,229 @@ After completion, WinSweep displays:
 
 ### Operating System
 
-* Windows 10
-* Windows 11
+- Windows 10
+- Windows 11
 
 ### Software
 
-* PowerShell 5.0 or later
+- PowerShell 5.0 or later
 
 ### Permissions
 
-* Administrator privileges recommended
-* Some cleanup tasks may be limited without elevated permissions
+- Standard user permissions
+- Administrator privileges not required
 
 ---
 
 ## Installation
 
-Clone or download the repository:
+Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/winsweep.git
-cd winsweep
+git clone https://github.com/sawaruto123/flipper-hacksim.git
+cd flipper-hacksim
 ```
 
-Or simply download:
+Or download:
 
 ```text
-clean.ps1
+hack_sim.ps1
 ```
-
-to your desired directory.
 
 ---
 
 ## Usage
 
-### Standard PowerShell Execution
-
-Open PowerShell and run:
+### PowerShell
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\clean.ps1
+powershell -ExecutionPolicy Bypass -File .\hack_sim.ps1
 ```
 
-### Administrator Mode (Recommended)
+### Flipper Zero BadUSB
 
-```powershell
-Start-Process powershell -Verb RunAs -ArgumentList "-ExecutionPolicy Bypass -File .\clean.ps1"
-```
-
-### Flipper Zero BadUSB Deployment
-
-1. Transfer `clean.ps1` to the target machine.
-2. Launch PowerShell through your BadUSB payload.
+1. Transfer `hack_sim.ps1` to the target machine.
+2. Launch PowerShell using your BadUSB payload.
 3. Execute:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File clean.ps1
+powershell -ExecutionPolicy Bypass -File hack_sim.ps1
 ```
 
-4. Allow the cleanup process to complete.
+4. Sit back and enjoy the show.
 
 ---
 
-## Cleanup Targets
+## Simulation Stages
 
-| Category             | Target                                                  |
-| -------------------- | ------------------------------------------------------- |
-| User Temp            | `%TEMP%`                                                |
-| Windows Temp         | `C:\Windows\Temp`                                       |
-| Prefetch             | `C:\Windows\Prefetch`                                   |
-| Windows Update Cache | `C:\Windows\SoftwareDistribution\Download`              |
-| Thumbnail Cache      | `%LOCALAPPDATA%\Microsoft\Windows\Explorer`             |
-| Chrome Cache         | `%LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache`  |
-| Edge Cache           | `%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Cache` |
-| Firefox Cache        | `%APPDATA%\Mozilla\Firefox\Profiles\*\cache2`           |
-| Recycle Bin          | System Recycle Bin                                      |
-| DNS Cache            | Local DNS Resolver                                      |
-| Event Logs           | Windows Event Viewer Logs                               |
+### Stage 1 — Boot Sequence
+
+```text
+[BOOT] Loading kernel modules...
+[BOOT] Initializing memory pools...
+[NET] Establishing secure channel...
+[AUTH] Spoofing MAC address...
+[SCAN] Probing internal network...
+```
+
+### Stage 2 — Breach Sequence
+
+```text
+Bypassing Windows Defender
+Extracting SAM hashes
+Cracking NTLMv2
+Establishing reverse shell
+```
+
+### Stage 3 — Security Alerts
+
+```text
+[ALERT] Unauthorized process detected
+[ALERT] Firewall bypass successful
+[WARN] Ransomware payload staged
+```
+
+### Stage 4 — Interactive Shell
+
+```text
+root@target:~# ps aux
+root@target:~# netstat -anop tcp
+root@target:~# wget payload.exe
+root@target:~# ./payload.exe
+```
+
+### Stage 5 — System Enumeration
+
+Displays simulated:
+
+- Computer name
+- User information
+- Operating system
+- Public IP address
+- Local IP address
+- Domain information
+- Administrative privileges
+
+### Stage 6 — Persistence Installation
+
+```text
+Installing backdoor...
+Writing registry run key...
+Injecting into svchost.exe...
+Adding firewall exception...
+```
+
+### Stage 7 — Data Exfiltration
+
+Simulated extraction of:
+
+- Browser passwords
+- Wi-Fi credentials
+- Session tokens
+- Screenshots
+- Clipboard history
+
+### Stage 8 — Ransomware Event
+
+```text
+***********************************************
+*   WARNING: YOUR FILES HAVE BEEN ENCRYPTED   *
+***********************************************
+```
+
+### Stage 9 — Recovery
+
+```text
+Payment detected!
+Recovering files...
+Restoring system integrity...
+```
+
+The simulation automatically restores the system and concludes without making any changes.
 
 ---
 
 ## Example Output
 
 ```text
-[BOOTING NEURAL CLEANSE PROTOCOL...]
+══════════════════════════════════════════════════════════════
 
-> Scanning Temp Files
-> Purging Browser Cache
-> Clearing Windows Update Residue
-> Flushing DNS Cache
-> Removing Event Logs
+GHOST PROTOCOL v1.0
+UNAUTHORIZED ACCESS TERMINAL
 
-====================================
-NEURAL CLEANSE COMPLETE
-====================================
+══════════════════════════════════════════════════════════════
 
-Storage Recovered : 3.42 GB
-Available RAM     : 12.8 GB
-System Uptime     : 4 Days 12 Hours
-User              : Administrator
-Machine           : DESKTOP-XXXXXXX
+[BOOT] Loading kernel modules...
+[NET] Establishing secure channel...
+[AUTH] Spoofing MAC address...
 
-STATUS: CLEAN
+[INITIATING BREACH SEQUENCE]
+
+Bypassing Windows Defender [████████████████████] 100%
+Extracting SAM hashes      [████████████████████] 100%
+
+>>> SYSTEM BREACH. FULL CONTROL ACQUIRED. <<<
+
+[PERSIST] Installing backdoor...
+
+>>> BACKDOOR ACTIVE. PERSISTENT ACCESS GUARANTEED. <<<
+
+[EXFIL] Harvesting user data...
+
+WARNING: YOUR FILES HAVE BEEN ENCRYPTED
+
+[DECRYPT] Payment detected!
+
+>>> SYSTEM RESTORED. NO PERMANENT DAMAGE. STAY SAFE. <<<
 ```
 
 ---
 
-## Notes
+## Use Cases
 
-* Browser cache locations may vary depending on installed browser versions.
-* Some files may remain if actively used by running applications.
-* Administrator privileges improve cleanup coverage.
-* Event log clearing may be restricted by system policy.
-* Storage recovery estimates depend on file accessibility and permissions.
+- Flipper Zero demonstrations
+- Cybersecurity presentations
+- Classroom demonstrations
+- Red-team themed showcases
+- Convention displays
+- Streaming content
+- YouTube videos
+- Entertainment and prank scenarios
 
 ---
 
-## Disclaimer
+## Safety Notice
 
-This script is intended for system maintenance, educational purposes, and authorized administrative use.
+Flipper-HackSim is a visual simulation only.
 
-Always review scripts before executing them on production systems. Test in a controlled environment when possible. The author assumes no responsibility for data loss, configuration changes, or unintended consequences resulting from the use of this software.
+The script does **not**:
+
+- Access personal files
+- Open network connections
+- Steal passwords
+- Modify the registry
+- Disable antivirus software
+- Create persistence
+- Encrypt files
+- Install malware
+- Download payloads
+- Execute remote code
+
+All hacking-related messages shown during execution are fictional and generated locally for entertainment purposes.
+
+---
+
+## Screenshots
+
+Add screenshots or GIFs here:
+
+```md
+![Boot Sequence](images/boot-sequence.png)
+
+![Breach Simulation](images/breach-sequence.png)
+
+![Ransomware Alert](images/ransomware-alert.png)
+```
 
 ---
 
